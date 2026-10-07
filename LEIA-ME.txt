@@ -1,0 +1,22 @@
+Oficina João Ferrari — atualizar o GitHub Pages
+
+Repositório:
+https://github.com/brasilegitoturismo-rgb/ferrari-oficina
+
+Site no ar:
+https://brasilegitoturismo.com/ferrari-oficina/
+
+O index.html atual puxa CSS, fontes e fotos do site antigo do ChatGPT.
+Esta pasta traz a página nova, com fotos e fontes junto. Os caminhos são relativos,
+então funcionam nesse endereço.
+
+Como publicar
+1. Descompacte este zip.
+2. Abra o repositório no GitHub.
+3. Add file → Upload files.
+4. Arraste o conteúdo da pasta (não o arquivo .zip):
+   index.html, styles.css, favicon.svg, robots.txt, .nojekyll,
+   a pasta oficina/ e a pasta fonts/.
+5. O index.html novo substitui o antigo.
+6. Commit, por exemplo: Atualiza a página da oficina.
+7. Em 1 ou 2 minutos atualize https://brasilegitoturismo.com/ferrari-oficina/
