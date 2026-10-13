@@ -108,3 +108,31 @@
 
 /* Keep the equipment name together at every breakpoint. */
 #motocultivadores h3 { max-width: none; white-space: nowrap; font-size: clamp(1.35rem, 5.8vw, 1.7rem); }
+
+
+.pickup-section { display: grid; gap: 36px; background: #11120f; color: #f7f4ed; border-block: 1px solid #ffffff1c; }
+.pickup-copy { min-width: 0; }
+.pickup-copy .display { max-width: 20ch; font-size: clamp(2.5rem, 7vw, 4.5rem); line-height: 1; }
+.pickup-lead { color: #c8c9c0; font-size: 1rem; line-height: 1.75; max-width: 47ch; margin: 24px 0; }
+.pickup-equipment { display: flex; flex-wrap: wrap; gap: 8px; }
+.pickup-equipment span { border: 1px solid #f4682255; background: #f4682210; color: #ffab7d; border-radius: 6px; padding: 8px 12px; font-size: .8rem; }
+.pickup-size { color: #b7b8b0; font-size: .85rem; line-height: 1.7; margin: 18px 0 12px; max-width: 50ch; }
+.pickup-exclusion { padding-left: 14px; border-left: 2px solid #f46822; color: #e6e3da; font-size: .85rem; line-height: 1.7; }
+.pickup-cta { margin-top: 20px; border-radius: 10px; width: 100%; justify-content: space-between; text-align: left; line-height: 1.4; }
+.pickup-footnote { color: #aaa99e; font-size: .75rem; line-height: 1.6; margin-top: 12px; }
+.pickup-panel { min-width: 0; border: 1px solid #ffffff26; border-radius: 20px; overflow: hidden; background: linear-gradient(145deg, #28261e, #191a16 55%); }
+.pickup-route { padding: 12px 24px 20px; border-bottom: 1px solid #ffffff18; background: #ffffff03; }
+.pickup-route svg { display: block; width: 100%; height: auto; max-height: 145px; }
+.pickup-route > div { display: flex; justify-content: space-between; gap: 16px; font-size: .7rem; color: #c8c9c0; padding-inline: 8px; }
+.pickup-price { padding: 28px 24px 24px; text-align: center; }
+.pickup-price > span { display: block; color: #e2ded2; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+.pickup-price > strong { display: block; color: #ff8549; font: 700 6rem/1.15 var(--font-display); margin-top: 8px; }
+.pickup-price small { font-size: .42em; }
+.pickup-price p { margin: 4px 0 0; color: #c8c9c0; font-size: .8rem; line-height: 1.6; }
+.pickup-terms { margin-inline: 24px; border-top: 1px solid #ffffff20; }
+.pickup-terms > div { display: flex; align-items: flex-start; gap: 12px; padding-block: 18px; border-bottom: 1px solid #ffffff20; }
+.pickup-term-icon { flex: none; width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%; background: #f4682220; color: #ffab7d; }
+.pickup-terms p { margin: 0; color: #c8c9c0; font-size: .85rem; line-height: 1.7; }
+.pickup-terms strong { display: block; color: #f7f4ed; margin-bottom: 4px; }
+.pickup-choice { color: #c8c9c0; font-size: .8rem; line-height: 1.7; padding: 20px 24px 24px; margin: 0; }
+@media (min-width: 980px) { .pickup-section { grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center; } }
