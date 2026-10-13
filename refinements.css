@@ -57,6 +57,26 @@
 .nav-panel { transition: opacity .2s, visibility .2s; }
 .nav-panel a:focus-visible { outline-offset: -3px; }
 .desk-nav a[aria-current] { color: var(--color-orange-light); }
+.app-section { background: radial-gradient(ellipse at 90% 50%, #33271c, #171815 60%); align-items: center; gap: 36px; }
+.app-copy { min-width: 0; }
+.app-copy .display { max-width: 18ch; line-height: .98; }
+.app-copy .prose { margin-top: 24px; max-width: 46ch; }
+.app-benefits { display: grid; gap: 20px; padding: 0; margin: 28px 0; list-style: none; }
+.app-benefits li { display: flex; align-items: flex-start; gap: 14px; }
+.app-benefits li > span { display: grid; place-items: center; flex: none; width: 34px; height: 34px; border: 1px solid #ed742b66; border-radius: 8px; color: #ff8549; font-size: .75rem; }
+.app-benefits strong { font-size: .95rem; color: #f7f4ed; }
+.app-benefits p { margin: 4px 0 0; color: #b7b8b0; font-size: .85rem; line-height: 1.6; }
+.app-section .app-cta { margin-top: 0; width: 100%; border-radius: 10px; text-align: left; line-height: 1.4; justify-content: space-between; }
+.app-help { max-width: 45ch; margin: 16px 0 0; font-size: .8rem; line-height: 1.7; color: #b7b8b0; }
+.app-preview { width: min(100%, 400px); justify-self: center; margin: 0; }
+.app-preview img { width: 100%; height: auto; border-radius: 24px; box-shadow: 0 24px 60px #0005; }
+.app-preview figcaption { margin: 14px 8px 0; font-size: .7rem; color: #b7b8b0; text-align: center; line-height: 1.6; }
+.app-process-details { grid-column: 1 / -1; border-top: 1px solid #ffffff26; padding-top: 20px; }
+.app-process-details summary { display: flex; justify-content: space-between; align-items: center; min-height: 48px; gap: 16px; cursor: pointer; list-style: none; font-weight: 700; }
+.app-process-details summary::-webkit-details-marker { display: none; }
+.app-process-details summary span { font-size: 1.5rem; color: #ff8549; }
+.app-process-details[open] summary span { transform: rotate(45deg); }
+.app-process-details > p { max-width: 65ch; color: #b7b8b0; font-size: .9rem; line-height: 1.7; }
 @media (min-width: 600px) {
   .form-row { grid-template-columns: 1fr 1fr; }
   .quote-form { padding: 32px; }
