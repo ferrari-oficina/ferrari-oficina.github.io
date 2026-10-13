@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://ferrari-oficina.github.io/sitemap.xml
