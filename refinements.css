@@ -105,3 +105,6 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Keep the equipment name together at every breakpoint. */
+#motocultivadores h3 { max-width: none; white-space: nowrap; font-size: clamp(1.35rem, 5.8vw, 1.7rem); }
