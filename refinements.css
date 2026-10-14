@@ -136,3 +136,40 @@
 .pickup-terms strong { display: block; color: #f7f4ed; margin-bottom: 4px; }
 .pickup-choice { color: #c8c9c0; font-size: .8rem; line-height: 1.7; padding: 20px 24px 24px; margin: 0; }
 @media (min-width: 980px) { .pickup-section { grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center; } }
+
+:root { --notice-height: 48px; }
+.transport-notice { position: fixed; z-index: 50; top: 0; left: 0; right: 0; height: var(--notice-height); display: flex; align-items: center; justify-content: center; padding: 5px max(16px, env(safe-area-inset-left)); background: #f46822; color: #17130e; text-align: center; font-size: 11px; font-weight: 700; line-height: 1.4; }
+.topbar { top: var(--notice-height); }
+html { scroll-padding-top: calc(var(--notice-height) + 84px + env(safe-area-inset-top)); }
+.nav-panel { top: calc(var(--notice-height) + 68px + env(safe-area-inset-top)); }
+.hero { padding-top: calc(var(--notice-height) + 96px + env(safe-area-inset-top)); }
+.hero-actions { margin-top: 20px; gap: 10px; }
+.hero .lead { margin-top: 20px; }
+.hero-brands { grid-column: 1 / -1; width: 100%; padding-block: 14px 12px; border-bottom: 1px solid #ffffff20; }
+.hero-brands > p { margin: 0 0 12px; color: #b7b8b0; font-size: 10px; text-transform: uppercase; letter-spacing: .12em; }
+.hero-brands-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 12px; align-items: center; }
+.hero-brand { display: flex; justify-content: center; align-items: center; min-width: 0; min-height: 32px; }
+.hero-brand img { display: block; width: 100%; max-width: 110px; height: 30px; object-fit: contain; filter: grayscale(100%) brightness(0) invert(1) opacity(70%); }
+.hero-brand .logo-fallback { display: none; }
+.logo-unavailable img { display: none; }
+.logo-unavailable .logo-fallback { display: block; }
+.hero-brand .brand-wordmark, .hero-brand .logo-fallback { color: #deded6; opacity: .7; font: 700 1.1rem var(--font-body); letter-spacing: -.04em; }
+.brand-toyama .brand-wordmark { font-style: italic; letter-spacing: -.06em; }
+.brand-branco .brand-wordmark { font-family: var(--font-display); font-size: 1.45rem; letter-spacing: .04em; }
+.brand-stihl .logo-fallback { font-style: italic; font-weight: 800; }
+.brand-karcher .logo-fallback { border-bottom: 3px solid currentColor; line-height: 1.1; }
+.hero-brands > small { display: block; color: #aaa99e; font-size: 9px; margin-top: 12px; }
+@media (min-width: 600px) {
+  :root { --notice-height: 34px; }
+  .transport-notice { font-size: 12px; }
+  .hero-brands-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .hero-brand .brand-wordmark { font-size: .95rem; }
+  .brand-branco .brand-wordmark { font-size: 1.25rem; }
+}
+@media (min-width: 980px) {
+  .hero { padding-top: calc(var(--notice-height) + 130px); }
+  .hero-visual { gap: 10px; }
+  .machine-card { max-height: 440px; aspect-ratio: 4 / 3; }
+  .hero-brands-grid { gap: 10px; }
+  .hero-brand img { max-width: 95px; height: 26px; }
+}
