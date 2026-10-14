@@ -220,3 +220,27 @@ html { scroll-padding-top: calc(var(--notice-height) + 84px + env(safe-area-inse
   .real-work .photo-3 figcaption { flex-wrap: wrap; column-gap: 6px; font-size: clamp(.8rem, 3.5vw, 1rem); overflow-wrap: normal; word-break: normal; }
   .real-work .photo-3 figcaption > span { flex-basis: 100%; }
 }
+
+/* Compact, manually browsed workshop gallery. */
+.real-work { background: #11120f; color: #f7f4ed; padding-block: 48px; }
+.real-work .eyebrow.dark, .real-work .section-heading > p { color: #b7b8b0; }
+.real-work .section-heading .display { font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1; }
+.bench-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; }
+.bench-toolbar p { margin: 0; font-size: .8rem; color: #b7b8b0; }
+.bench-controls, .bench-dialog-controls { display: flex; gap: 8px; }
+.bench-controls button, .bench-dialog button { min-height: 44px; padding: 10px 16px; border: 1px solid #ffffff40; border-radius: 8px; background: #22231f; color: #f7f4ed; font-size: .8rem; cursor: pointer; }
+.real-work .gallery-grid { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 0 16px; scrollbar-width: thin; scrollbar-color: #f46822 #292a24; }
+.real-work .work-photo, .real-work .work-photo.is-square { flex: 0 0 82%; min-width: 0; height: auto; aspect-ratio: auto; overflow: hidden; margin: 0; border: 1px solid #ffffff20; border-radius: 12px; background: #22231f; box-shadow: none; scroll-snap-align: start; }
+.bench-photo-link { display: block; background: #191a16; }
+.real-work .work-photo img { position: static; display: block; width: 100%; height: 230px; object-fit: contain; }
+.real-work .work-photo figcaption, .real-work .photo-3 figcaption { position: static; display: block; padding: 14px 16px; background: #22231f; font-size: 1.1rem; line-height: 1.3; overflow-wrap: normal; text-transform: none; letter-spacing: .02em; }
+.bench-dialog { width: min(94vw, 1000px); max-height: 94dvh; padding: 16px; border: 1px solid #ffffff40; border-radius: 14px; background: #171815; color: #f7f4ed; }
+.bench-dialog::backdrop { background: #000d; }
+.bench-dialog-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.bench-counter { margin: 0; color: #b7b8b0; font-size: .85rem; }
+.bench-expanded { display: block; width: 100%; height: min(65dvh, 650px); object-fit: contain; }
+.bench-caption { text-align: center; margin: 12px 0; font-size: .9rem; }
+.bench-dialog-controls { justify-content: center; }
+.bench-dialog button:disabled { opacity: .4; cursor: default; }
+body.bench-modal-open { overflow: hidden; }
+@media (min-width: 720px) { .real-work { padding-block: 64px; } .real-work .work-photo { flex-basis: calc((100% - 28px) / 3); } .real-work .work-photo img { height: 260px; } }
