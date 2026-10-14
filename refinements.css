@@ -180,3 +180,31 @@ html { scroll-padding-top: calc(var(--notice-height) + 84px + env(safe-area-inse
 /* Keep the three pickup equipment tags on one row on iPhone. */
 .pickup-equipment { flex-wrap: nowrap; gap: 6px; }
 .pickup-equipment span { flex: 1 1 0; min-width: 0; white-space: nowrap; text-align: center; padding: 8px 7px; font-size: clamp(.65rem, 2.8vw, .8rem); }
+
+/* Compact service directory, aligned with the dark workshop theme. */
+.services { background: #171815; color: #f7f4ed; padding-block: 48px; }
+.services .section-heading { gap: 16px; margin-bottom: 24px; }
+.services .eyebrow.dark { color: #b7b8b0; }
+.services .section-heading .display { max-width: 22ch; font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1; }
+.services .section-heading > p { color: #b7b8b0; font-size: .9rem; max-width: 45ch; }
+.services .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.services .service-card { min-height: 0; padding: 16px 12px; background: #22231f; border: 1px solid #ffffff1c; border-radius: 10px; box-shadow: none; }
+.services .service-number { display: none; }
+.services .service-glyph { width: 28px; height: 28px; color: #ff8549; }
+.services .service-card h3, .services #motocultivadores h3 { max-width: none; margin: 12px 0 8px; font-size: clamp(1rem, 4.2vw, 1.55rem); line-height: 1.1; overflow-wrap: normal; word-break: normal; }
+.services .service-card h3 { white-space: normal; }
+.services #motocultivadores h3 { white-space: nowrap; }
+.services .service-card p { color: #c4c5bc; font-size: .8rem; line-height: 1.55; margin: 0; }
+.services-action { display: grid; justify-items: center; gap: 12px; margin-top: 24px; }
+.services-action .primary { border-radius: 10px; width: min(100%, 340px); }
+.services-action p { margin: 0; color: #b7b8b0; font-size: .75rem; text-align: center; line-height: 1.6; }
+@media (min-width: 720px) {
+  .services { padding-block: 64px; }
+  .services .service-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .services .service-card { padding: 22px; }
+  .services .service-card h3, .services #motocultivadores h3 { font-size: 1.55rem; }
+  .services .service-card p { font-size: .85rem; }
+}
+@media (hover: hover) and (pointer: fine) {
+  .services .service-card:hover { background: #292a24; border-color: #f4682266; box-shadow: none; }
+}
