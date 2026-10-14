@@ -176,3 +176,7 @@ html { scroll-padding-top: calc(var(--notice-height) + 84px + env(safe-area-inse
 
 /* Keep the location label together on narrow iPhone screens. */
 .fc-two b { white-space: nowrap; font-size: clamp(.85rem, 3.8vw, 1.05rem); }
+
+/* Keep the three pickup equipment tags on one row on iPhone. */
+.pickup-equipment { flex-wrap: nowrap; gap: 6px; }
+.pickup-equipment span { flex: 1 1 0; min-width: 0; white-space: nowrap; text-align: center; padding: 8px 7px; font-size: clamp(.65rem, 2.8vw, .8rem); }
