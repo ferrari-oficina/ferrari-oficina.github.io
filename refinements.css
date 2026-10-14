@@ -214,3 +214,9 @@ html { scroll-padding-top: calc(var(--notice-height) + 84px + env(safe-area-inse
 /* Center button labels and use the WhatsApp symbol for WhatsApp actions. */
 .app-section .app-cta, .pickup-cta, .quote-send, .location-link { justify-content: center; text-align: center; }
 .app-cta .whatsapp-icon, .pickup-cta .whatsapp-icon, .quote-send .whatsapp-icon, .quote-fallback .whatsapp-icon { width: 20px; height: 20px; }
+
+/* Give the long bench caption a full row on narrow screens. */
+@media (max-width: 719px) {
+  .real-work .photo-3 figcaption { flex-wrap: wrap; column-gap: 6px; font-size: clamp(.8rem, 3.5vw, 1rem); overflow-wrap: normal; word-break: normal; }
+  .real-work .photo-3 figcaption > span { flex-basis: 100%; }
+}
