@@ -173,3 +173,6 @@ html { scroll-padding-top: calc(var(--notice-height) + 84px + env(safe-area-inse
   .hero-brands-grid { gap: 10px; }
   .hero-brand img { max-width: 95px; height: 26px; }
 }
+
+/* Keep the location label together on narrow iPhone screens. */
+.fc-two b { white-space: nowrap; font-size: clamp(.85rem, 3.8vw, 1.05rem); }
