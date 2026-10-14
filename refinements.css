@@ -208,3 +208,5 @@ html { scroll-padding-top: calc(var(--notice-height) + 84px + env(safe-area-inse
 @media (hover: hover) and (pointer: fine) {
   .services .service-card:hover { background: #292a24; border-color: #f4682266; box-shadow: none; }
 }
+
+@media (max-width: 359px) { .services #motocultivadores h3 { font-size: .85rem; letter-spacing: 0; } }
