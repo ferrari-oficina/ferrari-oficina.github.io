@@ -210,3 +210,7 @@ html { scroll-padding-top: calc(var(--notice-height) + 84px + env(safe-area-inse
 }
 
 @media (max-width: 359px) { .services #motocultivadores h3 { font-size: .85rem; letter-spacing: 0; } }
+
+/* Center button labels and use the WhatsApp symbol for WhatsApp actions. */
+.app-section .app-cta, .pickup-cta, .quote-send, .location-link { justify-content: center; text-align: center; }
+.app-cta .whatsapp-icon, .pickup-cta .whatsapp-icon, .quote-send .whatsapp-icon, .quote-fallback .whatsapp-icon { width: 20px; height: 20px; }
